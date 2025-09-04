@@ -25,8 +25,8 @@ const AdminSidebar = ({ onToggleSidebar, sidebarOpen }) => {
       icon: BarChart,
     },
     {
-      path: "/admin/users",
-      name: "Users",
+      path: "/admin/sellers",
+      name: "Sellers",
       icon: Users,
     },
     {

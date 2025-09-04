@@ -9,6 +9,8 @@ import AdminOrders from "../src/Pages/Admin/AdminOrders/AdminOrders";
 import AdminUsers from "../src/Pages/Admin/AdminUsers/AdminUsers";
 import AdminProtectedRoute from "../src/Components/Navbar/AdminProtectedRoute/AdminProtectedRoute";
 import PaymentMethod from "../src/Pages/Admin/PaymentMethod/PaymentMethod";
+import SellerManagement from "../src/Pages/Admin/SellerManagement/SellerManagement";
+import OrderSuccess from "../src/Pages/OrderForm/OrderSuccess";
 
 export const router = createBrowserRouter([
   {
@@ -22,6 +24,10 @@ export const router = createBrowserRouter([
       {
         path: "/order",
         element: <OrderForm />,
+      },
+      {
+        path: "/order-success",
+        element: <OrderSuccess />,
       },
     ],
   },
@@ -56,6 +62,10 @@ export const router = createBrowserRouter([
       {
         path: "/admin/PaymentMethod",
         element: <PaymentMethod />,
+      },
+      {
+        path: "/admin/sellers",
+        element: <SellerManagement />,
       },
     ],
   },
